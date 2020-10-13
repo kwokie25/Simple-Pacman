@@ -1,8 +1,8 @@
 # Simple Pacman
 
 ## System Requirements
->A working *Java environment*, [which can be set up here](https://www.oracle.com/technetwork/java/javase/downloads/index.html) <br/>
->*JavaFX* is also installed with this package
+>A working *Java environment*, [which can be set up here](https://www.oracle.com/technetwork/java/javase/downloads/index.html). <br/>
+>*JavaFX* is also installed with this package.
 
 ## Installation and Usage
 1. Visit [the code repository](https://github.com/quickaccount/simple_pacman) <br/>
