@@ -1,0 +1,34 @@
+// plugins: add functionality to your build
+plugins {
+    id 'java'   // adds capabilities like compiling java code and running tests
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+// build metadata: information about the build
+group 'com.skwok.pacman'
+version '1.0-SNAPSHOT'
+
+// repositories: where your build's dependencies are downloaded from
+repositories {
+    mavenCentral()
+}
+
+// dependencies: artifacts that are required in order to build the project
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:4.12.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+javafx {
+    version = '12'
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media' ]
+}
+
+application {
+    mainClass = 'com.skwok.pacman.GameDisplay'
+}

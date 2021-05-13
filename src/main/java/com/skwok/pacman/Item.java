@@ -1,3 +1,5 @@
+package com.skwok.pacman;
+
 import constants.ConstantVariables;
 
 /**
@@ -12,7 +14,7 @@ public abstract class Item {
 
     /**
      * Constructor that creates an Item at the specified location.
-     * 
+     *
      * @param x the initial x-coord.
      * @param y the initial y-coord.
      */
@@ -38,47 +40,47 @@ public abstract class Item {
                 y = ConstantVariables.INITIAL_Y; //Create somewhere along bottom wall, as no problems can occur there (x coord does not matter there)
             }
         }
-        
+
         this.setXCoord(x);
         this.setYCoord(y);
     }
 
 
     /**
-    * Change only the x coordinate of the Item.
-    * 
-    * @param xNew the new x position.
-    */
+     * Change only the x coordinate of the Item.
+     *
+     * @param xNew the new x position.
+     */
     protected void setXCoord(int xNew){
         this.xcoord = xNew;
     }
 
 
     /**
-    * Change only the y coordinate of the Item.
-    * 
-    * @param yNew the new y position.
-    */
+     * Change only the y coordinate of the Item.
+     *
+     * @param yNew the new y position.
+     */
     protected void setYCoord(int yNew){
         this.ycoord = yNew;
     }
 
 
     /**
-    * Returns the object's current x coordinate.
-    * 
-    * @return an integer value for the x coordinate.
-    */
+     * Returns the object's current x coordinate.
+     *
+     * @return an integer value for the x coordinate.
+     */
     public int getXCoord() {
         return this.xcoord;
     }
 
 
     /**
-    * Returns the object's current y coordinate.
-    * 
-    * @return an integer value for the y coordinate.
-    */
+     * Returns the object's current y coordinate.
+     *
+     * @return an integer value for the y coordinate.
+     */
     public int getYCoord() {
         return this.ycoord;
     }

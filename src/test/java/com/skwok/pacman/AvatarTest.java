@@ -1,8 +1,8 @@
-/**
+package com.skwok.pacman; /**
 * Test for AI class in Simple_Pacman
 javac Avatar.java
 javac -cp .;junit-4.12.jar;hamcrest-core-1.3.jar *.java
-java -cp .;junit-4.12.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore AvatarTest
+java -cp .;junit-4.12.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore com.skwok.pacman.AvatarTest
 * @author T10-G02
 */
 
@@ -180,7 +180,7 @@ public class AvatarTest {
 
 		for (int x = 0; x < goThrough.size() - 1; x++) {
 			testAv.changeDirection(goThrough.get(x), items);
-			
+
 			if (x == 0 || x ==1) {
 				dir = "10"; //Moving right
 			} else if (x == 2) {
