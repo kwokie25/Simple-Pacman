@@ -17,7 +17,7 @@ repositories {
 // dependencies: artifacts that are required in order to build the project
 dependencies {
     testImplementation 'junit:junit:4.12'
-    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.3.1'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:4.12.0'
 }
 
 test {
